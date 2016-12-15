@@ -1,0 +1,26 @@
+version: '2'
+services:
+  httpd:
+    restart: always
+    build: ./apache2-dockerfile
+    ports: 
+      - "80:80"
+    depends_on:
+    - mysql
+    links:
+    - mysql:mysql520
+    volumes:
+    - /data/mywork/apache2/html:/var/www/html
+    - /data/mywork/apache2/conf:/etc/apache2
+    - /data/mywork/apache2/logs:/var/log/apache2
+    - /data/mywork/apache2/lock:/var/lock/apache2  
+  mysql:
+    restart: always
+    image: mysql
+    ports: 
+     - "3306:3306"
+    volumes:
+       - /data/mywork/mysql/db:/var/lib/mysql
+       - /data/mywork/mysql/conf:/etc/mysql 
+    environment:
+        - MYSQL_ROOT_PASSWORD=199287  
