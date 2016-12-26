@@ -7,8 +7,16 @@ docker file
 2. 挂载磁盘   
   a.在根目录下 创建 /data目录  其中包括 docker  和 mywork目录
         mywork创建apache2和mysql
+	cd /data/mywork
+	mkdir apache2 && mkdir mysql
+
 	apache2包括conf，html，lock，logs
+	cd apache2
+	mkdir conf && mkdir html && mkdir lock && mkdir logs
+
 	mysql包括conf，db
+	cd mysql
+	mkdir conf && mkdir db 
 
   b.主分区占大部分磁盘空间 挂载到/data目录下
      次分区占小部分磁盘空间，挂载到/usr1目录下，注意挂在完之后把系统原有的usr目录下所有文件拷贝过来，然后重命名或者删除系统的usr目录，把新建的usr1改变成usr，
