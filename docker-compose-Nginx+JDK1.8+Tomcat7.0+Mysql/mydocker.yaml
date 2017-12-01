@@ -7,6 +7,7 @@ services:
       - "80:80"
     volumes:
     - /data/mywork/nginx/html:/usr/share/nginx/html
+    - /data/mywork/nginx/conf:/etc/nginx/conf.d
     - /data/mywork/nginx/logs:/var/log/nginx
     depends_on:
         - tomcat
