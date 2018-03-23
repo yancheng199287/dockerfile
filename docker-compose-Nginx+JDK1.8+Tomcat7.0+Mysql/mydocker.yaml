@@ -17,8 +17,8 @@ services:
     image: yancheng/jdk1.8-tomcat7:v1.0.0
     restart: always
     volumes:
-     - /data/mywork/tomcat/webapp:/home/apache-tomcat-7.0.82/webapps
-     - /data/mywork/tomcat/log:/home/apache-tomcat-7.0.82/logs
+     - /data/mywork/tomcat/webapp:/home/apache-tomcat-8.5.29/webapps
+     - /data/mywork/tomcat/log:/home/apache-tomcat-8.5.29/logs
     depends_on:
       - mysql
     links:
