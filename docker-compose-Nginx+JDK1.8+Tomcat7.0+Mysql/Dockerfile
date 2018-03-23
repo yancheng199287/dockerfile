@@ -21,7 +21,7 @@ RUN wget http://mirrors.shu.edu.cn/apache/tomcat/tomcat-8/v8.5.29/bin/apache-tom
 RUN tar xvf apache-tomcat-8.5.29.tar.gz
 
 #配置tomcat的环境变量
-ENV CATALINA_HOME /home/apache-tomcat-8.5.29.tar.gz
+ENV CATALINA_HOME /home/apache-tomcat-8.5.29
 
 EXPOSE 8080
 
