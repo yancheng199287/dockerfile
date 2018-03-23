@@ -28,7 +28,7 @@ docker-compose -f /home/mydocker.yaml -p JavaApp up -d
 
 注意  关于jdk  使用wget下载 可能有时候无法成功，原因是链接地址发生改变，请更改。
 
-如果找到jdk真正的下载地址呢？
+如何找到jdk真正的下载地址呢？
 
 去 oracle官方下载页面  http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
