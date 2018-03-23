@@ -26,4 +26,4 @@ ENV CATALINA_HOME /home/apache-tomcat-8.5.29.tar.gz
 EXPOSE 8080
 
 #设置tomcat 自启动
-CMD [ "/home/apache-tomcat-8.5.29.tar.gz/bin/catalina.sh", "run" ]
+CMD [ "/home/apache-tomcat-8.5.29/bin/catalina.sh", "run" ]
