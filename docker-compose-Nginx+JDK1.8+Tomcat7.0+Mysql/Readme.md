@@ -1,23 +1,25 @@
 
 
-## Dockerfile ÊÇÓÃÀ´¹¹½¨Ò»¸öJDK1.8+Tomcat7.0µÄ¾µÏñ£¬ÊÊºÏµ¥¶ÀÊ¹ÓÃ
-### Èç¹ûJDK»òÕßTomcat°æ±¾ĞèÒª±ä¸ü£¬Ö»ĞèÒª¸ü¸Ä ÏÂÔØÁ´½ÓµØÖ· ÆäËû²»ÓÃ±ä
+## Dockerfile æ˜¯ç”¨æ¥æ„å»ºä¸€ä¸ªJDK1.8+Tomcat7.0çš„é•œåƒï¼Œé€‚åˆå•ç‹¬ä½¿ç”¨
+### å¦‚æœJDKæˆ–è€…Tomcatç‰ˆæœ¬éœ€è¦å˜æ›´ï¼Œåªéœ€è¦æ›´æ”¹ ä¸‹è½½é“¾æ¥åœ°å€ å…¶ä»–ä¸ç”¨å˜
 
-## mydocker.yaml  ÊÇÓÃÀ´×éºÏ±àÅÅ¹¹½¨ÈİÆ÷·şÎñ ÊµÏÖÁË nginx + tomcat +mysql ÁªºÏ
-
-
-1. ÏÈÊ¹ÓÃDockerfile ¹¹½¨ Tomcat¾µÏñ
-
-2. ÔÙÊ¹ÓÃmydocker.yaml ÁªºÏ¹¹½¨
+## mydocker.yaml  æ˜¯ç”¨æ¥ç»„åˆç¼–æ’æ„å»ºå®¹å™¨æœåŠ¡ å®ç°äº† nginx + tomcat +mysql è”åˆ
 
 
+1. å…ˆä½¿ç”¨Dockerfile æ„å»º Tomcaté•œåƒ
 
-1. ¼ì²éÎÄ¼şÓï·¨ÊÇ·ñÕı³£
+2. å†ä½¿ç”¨mydocker.yaml è”åˆæ„å»º
+
+3. default.conf Â æ”¾åœ¨nginx/conf ä¸‹ Â ä»¥åå¯ä»¥åœ¨è¿™é‡Œé…ç½®ä»£ç†
+
+
+
+1. æ£€æŸ¥æ–‡ä»¶è¯­æ³•æ˜¯å¦æ­£å¸¸
 docker-compose -f /home/mydocker.yaml up config
 
 
-2. Ç°Ì¨Æô¶¯
+2. å‰å°å¯åŠ¨
 docker-compose -f /home/mydocker.yaml -p JavaApp up
 
-2. ºóÌ¨Æô¶¯
+2. åå°å¯åŠ¨
 docker-compose -f /home/mydocker.yaml -p JavaApp up -d
