@@ -12,7 +12,7 @@ RUN wget --header "Cookie: oraclelicense=accept-securebackup-cookie" http://down
 RUN tar -zxf jdk-8u161-linux-x64.tar.gz
 
 # 配置环境变量
-ENV JAVA_HOME /home/jdk1.8.0_151
+ENV JAVA_HOME /home/jdk1.8.0_161
 ENV CLASSPATH .:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
 ENV PATH $JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 
