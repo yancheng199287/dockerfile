@@ -7,7 +7,7 @@
 
 
 1. 先使用Dockerfile 构建 Tomcat镜像
-   docker build -t yancheng/jdk1.8-tomcat7:v1.0.0 -< Dockerfile
+   docker build -t yancheng/jdk1.8-tomcat8:v1.0.0 -< Dockerfile
 
 2. 再使用mydocker.yaml 联合构建
 
