@@ -53,6 +53,20 @@ docker file
 
 8.测试访问你的网站吧，应该没啥问题，前提你的域名没有变，数据库已经恢复正常。
 
+9. docker加速器配置，适用于deepin ubuntu debian系统
+注意：如果指定了加速器，可能无法下载docker hub的自己账户的镜像，这个时候登录下即可。
+
+ 创建文件 nano /etc/docker/daemon.json
+
+ 填写以下内容 
+
+{
+    "registry-mirrors": [
+        "http://c475dfe2.m.daocloud.io"
+    ],
+    "insecure-registries": []
+}
+
 
 
 可能遇到问题
