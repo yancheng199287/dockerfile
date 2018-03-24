@@ -14,7 +14,7 @@ services:
     links:
         - tomcat
   tomcat:
-    image: yancheng/jdk1.8-tomcat7:v1.0.0
+    image: yancheng/jdk1.8-tomcat8:v1.0.0
     restart: always
     volumes:
      - /data/mywork/tomcat/webapp:/home/apache-tomcat-8.5.29/webapps
