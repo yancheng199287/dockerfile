@@ -1,0 +1,11 @@
+
+注意： COPY 命令在 最新版的docker可能存在有问题
+
+可以借助本地web服务器  使用 wget下载，记住在此之前记得指定工作目录  WORKDIR /root
+
+
+
+docker build -t yancheng/apache-php:v1.0.0 -< Dockerfile
+
+后面不要加 /bin/bash
+docker run -dit -p 20080:80 1ea48a6d1e06
