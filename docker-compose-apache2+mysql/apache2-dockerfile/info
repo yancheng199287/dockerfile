@@ -7,5 +7,10 @@
 
 docker build -t yancheng/apache-php:v1.0.0 -< Dockerfile
 
-后面不要加 /bin/bash
+先使用少量参数测试下   后面不要加 /bin/bash
 docker run -dit -p 20080:80 1ea48a6d1e06
+
+完整端口 目录映射启动
+docker run --name=apache-php -d -v /data/mywork/apache2/html:/var/www/html -v /data/mywork/apache2/conf:/etc/apache2 -v /data/mywork/apache2/logs:/var/log/apache2 -v /data/mywork/apache2/lock:/var/lock/apache2 -p 20080:80 f5b1397ca65f
+
+
