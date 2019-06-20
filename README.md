@@ -3,10 +3,9 @@
 
 # dockerfile介绍
 
-[![SmartPrint](https://img.shields.io/travis/rust-lang/rust.svg?style=for-the-badge)](https://github.com/yancheng199287/SmartPrint)
- [![SmartPrint](https://img.shields.io/badge/SmartPrint-v1.0.0-red.svg?style=flat)](https://github.com/yancheng199287/SmartPrint)
- [![SmartPrint](https://img.shields.io/badge/Read-1000-blue.svg?style=flat)](https://github.com/yancheng199287/SmartPrint)
- [![SmartPrint](https://img.shields.io/badge/Author-Wangzihe-orange.svg?style=flat)](https://github.com/yancheng199287/SmartPrint)
+[![SmartPrint](https://img.shields.io/travis/rust-lang/rust.svg?style=for-the-badge)](https://github.com/yancheng199287/dockerfile)
+ [![SmartPrint](https://img.shields.io/badge/Read-1000-blue.svg?style=flat)](https://github.com/yancheng199287/dockerfile)
+ [![SmartPrint](https://img.shields.io/badge/Author-Wangzihe-orange.svg?style=flat)](https://github.com/yancheng199287/dockerfile)
 
 *交流QQ群：368512253*
 #### 建立dockerfile仓库的目的
