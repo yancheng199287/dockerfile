@@ -1,0 +1,39 @@
+version: '3'
+services:
+  daluu-mini-server:
+    restart: always
+    image: jdk8:v1.5
+    command: project-daluu-mini-1.0-SNAPSHOT.jar
+    extra_hosts:
+      - yancheng:172.18.183.58
+    ports:
+      - "8093:8093"
+    depends_on:
+    - redis
+    links:
+    - redis
+    volumes:
+    - /data/docker-work/mini-server:/home/app  
+  daluu-manage-server:
+    command: manage-project-1.0-SNAPSHOT.jar
+    restart: always
+    image: jdk8:v1.5
+    extra_hosts:
+      - yancheng:172.18.183.58
+    ports:
+      - "8094:8094"
+    depends_on:
+    - redis
+    links:
+    - redis
+    volumes:
+    - /data/docker-work/manage-server:/home/app    
+  redis:
+    command: redis-server /usr/local/etc/redis/redis.conf  #启动redis 指定配置文件，改配置文件是我们修改挂载进去的
+    restart: always
+    image: redis
+    ports:
+      - "6379:6379"
+    volumes:
+       - /data/docker-work/redis:/data   #持久化数据文件
+       - /data/docker-work/redis/redis.conf:/usr/local/etc/redis/redis.conf   #配置文件    
