@@ -8,6 +8,8 @@ services:
       - yancheng:172.18.183.58
     ports:
       - "8093:8093"
+    environment:
+      - TZ:Asia/Shanghai  
     depends_on:
     - redis
     links:
@@ -22,6 +24,8 @@ services:
       - yancheng:172.18.183.58
     ports:
       - "8094:8094"
+    environment:
+      - TZ:Asia/Shanghai    
     depends_on:
     - redis
     links:
