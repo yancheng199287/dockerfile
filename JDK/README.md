@@ -17,9 +17,10 @@ sources.list
 
 ### 运行举例
 
-> docker run -dit --name daluu-mini-server -p 8093:8093 -v /data/docker-work/mini-server:/home/app --add-host=yancheng:172.18.183.58 6b1c08ed6d56 app.jar
+> docker run -dit --name daluu-mini-server -e TZ="Asia/Shanghai" -p 8093:8093 -v /data/docker-work/mini-server:/home/app --add-host=yancheng:172.18.183.58 6b1c08ed6d56 app.jar
 
 --name 指定容器名称  
+-e 设置中国上海时区
 -p 你的jar包暴漏对外的端口 
 -v 映射的主机目录 jar包和日志都必须在这里  
 --add-host 使用主机名访问宿主机的内网ip  
